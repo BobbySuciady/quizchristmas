@@ -33,7 +33,7 @@ export default function Home() {
     },
     {
       question: 'Where do pirates hide their Xmas gifts?',
-      answers: ['Under the Sea', 'In a Treasure Chest', 'In a Ship', 'On an Island'],
+      answers: ['Under the Sea', 'In a Treasure Chest', 'Under Zola', 'they dont celebrate christmas'],
       correct: -1, // No correct answer; player must click the "X" in "Xmas"
       type: 'clickX',
     },
@@ -372,8 +372,8 @@ export default function Home() {
             <>
               {/* Question or Typing Prompt */}
               <h2 style={{
-  fontSize: currentQuestion === 7 ? '1.5rem' : '3rem', // Smaller text for the last question
-  marginBottom: '30px',
+  fontSize: currentQuestion === 7 ? '1rem' : '3rem', // Smaller text for the last question
+  marginBottom: '20px',
   textShadow: '2px 2px 4px #000',
 }}>
   {questions[currentQuestion].type === 'typing' ? (
